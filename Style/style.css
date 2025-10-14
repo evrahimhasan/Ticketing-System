@@ -117,7 +117,8 @@ nav ul li a {
 .form-group label {
     color: white;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin: 5px;
+    width: 200px;
 }
 
 .form-group select,
