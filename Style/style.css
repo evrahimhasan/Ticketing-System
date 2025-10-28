@@ -19,6 +19,12 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .logo img {
     height: 40px;
     border-radius: 50%;
@@ -39,7 +45,23 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 600;
+    margin: 0 15px;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* active with target psudo class */
+#admin:target~header nav a[href="#admin"],
+#canceltickets:target~header nav a[href="#canceltickets"],
+#offers:target~header nav a[href="#offers"] {
+    background: white;
+    color: olivedrab;
+    font-weight: bold;
+}
+
 
 .login-btn a {
     background: blue;
@@ -154,4 +176,11 @@ nav ul li a {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.search-btn:hover {
+    background: #2563eb;
 }
