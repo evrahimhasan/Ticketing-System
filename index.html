@@ -1,137 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Ticket</title>
-    <!-- favicon -->
-    <link rel="icon" href="https://i.ibb.co.com/jZfCpW00/347ea4f110a48472365c787f0814a562.jpg">
-    <link rel="stylesheet" href="Style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Ticket</title>
+  <link rel="icon" href="https://i.ibb.co.com/jZfCpW00/347ea4f110a48472365c787f0814a562.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans">
 
-
-    <section id="admin"></section>
-    <section id="canceltickets"></section>
-    <section id="offers"></section>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <img src="https://i.ibb.co.com/jZfCpW00/347ea4f110a48472365c787f0814a562.jpg" alt="">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#admin">Admin</a></li>
-                <li><a href="#canceltickets">Cancel Tickets</a></li>
-                <li><a href="#offers">Offers</a></li>
-            </ul>
-        </nav>
-        <div class="login-btn">
-            <a href="">Signup</a>
-            <a href="">LOGIN</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <div class="background">
-        <section class="hero">
-            <div class="overlay"></div>
-            <div class="hero-text">
-                <h1>Online Ticketing made easy!</h1>
-                <p>Buy tickets online hassle-free.</p>
-            </div>
-
-            <!-- Search Box -->
-            <div class="search-box">
-                <form>
-                    <div class="form-group">
-                        <label>Leaving From</label>
-                        <select>
-                            <option>From</option>
-                            <option>Mymensingh</option>
-                            <option>Sherpur</option>
-                            <option>Netrokuna</option>
-                            <option>Jamalpur</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Going To</label>
-                        <select>
-                            <option>To</option>
-                            <option>Dhaka</option>
-                            <option>Gazipur</option>
-                            <option>Chottogram</option>
-                            <option>Cox's Bazar</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Departing On</label>
-                        <input type="date">
-                    </div>
-                    <div class="form-group">
-                        <label>Coach Type</label>
-                        <select>
-                            <option>All</option>
-                            <option>Non-AC</option>
-                            <option>AC</option>
-                            <option>Sleeper</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="search-btn">SEARCH</button>
-                </form>
-            </div>
-        </section>
+  <!-- ===== Header ===== -->
+  <header class="sticky top-0 z-50 flex flex-col md:flex-row justify-between items-center bg-olive-600 bg-[olivedrab] text-white shadow-md px-8 py-4">
+    <div class="flex items-center gap-2">
+      <img src="https://i.ibb.co.com/jZfCpW00/347ea4f110a48472365c787f0814a562.jpg" alt="logo" class="h-10 w-10 rounded-full">
+      <span class="font-bold text-lg">EasyTicket</span>
     </div>
 
+    <nav>
+      <ul class="flex gap-10">
+        <li><a href="#admin" class="hover:underline font-semibold">Admin</a></li>
+        <li><a href="#canceltickets" class="hover:underline font-semibold">Cancel Tickets</a></li>
+        <li><a href="#offers" class="hover:underline font-semibold">Offers</a></li>
+      </ul>
+    </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
+    <div class="flex gap-2">
+      <a href="#" class="bg-blue-600 px-4 py-2 rounded text-white font-bold hover:bg-blue-700">Signup</a>
+      <a href="#" class="bg-blue-600 px-4 py-2 rounded text-white font-bold hover:bg-blue-700">Login</a>
+    </div>
+  </header>
 
-            <!-- About -->
-            <div class="footer-section about">
-                <h3>About EasyTicket</h3>
-                <p>
-                    EasyTicket is a trusted online ticket booking platform where you can easily purchase bus tickets
-                    for different routes across the country. Plan your journey from home — fast, secure, and
-                    hassle-free.
-                </p>
-            </div>
+  <!-- ===== Hero Section ===== -->
+  <section class="relative h-screen bg-cover bg-center flex flex-col items-center justify-center text-center" 
+    style="background-image: url('https://i.ibb.co.com/84x7XCnm/79fc65573c42cd2a8e5479f041e9f826.jpg');">
+    
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    
+    <div class="relative z-10 text-white space-y-2 animate-fadeInUp">
+      <h1 class="text-4xl md:text-5xl font-bold">অনলাইন টিকেট বুকিং এখন সহজ!</h1>
+      <p class="text-lg md:text-xl">ঘরে বসেই সহজে কিনুন আপনার টিকেট।</p>
+    </div>
 
-            <!-- Quick Links -->
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#admin">Admin Panel</a></li>
-                    <li><a href="#canceltickets">Cancel Tickets</a></li>
-                    <li><a href="#offers">Offers</a></li>
-                    <li><a href="#">Help & Support</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="footer-section contact">
-                <h3>Contact Us</h3>
-                <p>123 Green Road, Mymensings</p>
-                <p>+880 1301 701 330</p>
-                <p>support@easyticket.com</p>
-
-                <div class="social-icons">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
-                </div>
-            </div>
+    <!-- Search Box -->
+    <div class="relative z-10 bg-teal-400 p-6 mt-8 rounded-xl shadow-lg">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex flex-col">
+          <label class="text-white mb-1 font-medium">Leaving From</label>
+          <select class="p-2 rounded border-none focus:outline-none">
+            <option>From</option>
+            <option>Mymensingh</option>
+            <option>Sherpur</option>
+            <option>Netrokuna</option>
+            <option>Jamalpur</option>
+          </select>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 EasyTicket. All rights reserved.</p>
+        <div class="flex flex-col">
+          <label class="text-white mb-1 font-medium">Going To</label>
+          <select class="p-2 rounded border-none focus:outline-none">
+            <option>To</option>
+            <option>Dhaka</option>
+            <option>Gazipur</option>
+            <option>Chottogram</option>
+            <option>Cox's Bazar</option>
+          </select>
         </div>
-    </footer>
+
+        <div class="flex flex-col">
+          <label class="text-white mb-1 font-medium">Departing On</label>
+          <input type="date" class="p-2 rounded border-none focus:outline-none">
+        </div>
+
+        <div class="flex flex-col">
+          <label class="text-white mb-1 font-medium">Coach Type</label>
+          <select class="p-2 rounded border-none focus:outline-none">
+            <option>All</option>
+            <option>Non-AC</option>
+            <option>AC</option>
+            <option>Sleeper</option>
+          </select>
+        </div>
+
+        <button type="submit" class="col-span-1 md:col-span-2 bg-yellow-400 hover:bg-blue-600 hover:text-white text-black font-bold py-3 rounded transition duration-300">
+          SEARCH
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-[olivedrab] text-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6 py-12">
+
+      <!-- About -->
+      <div>
+        <h3 class="text-yellow-300 text-lg font-semibold mb-3">About EasyTicket</h3>
+        <p class="text-sm leading-relaxed">
+          EasyTicket একটি বিশ্বস্ত অনলাইন টিকেট বুকিং প্ল্যাটফর্ম যেখানে আপনি দেশের বিভিন্ন রুটের বাস টিকেট ঘরে বসে সহজেই কিনতে পারেন — দ্রুত, নিরাপদ ও ঝামেলামুক্ত।
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-yellow-300 text-lg font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#admin" class="hover:text-yellow-300">Admin Panel</a></li>
+          <li><a href="#canceltickets" class="hover:text-yellow-300">Cancel Tickets</a></li>
+          <li><a href="#offers" class="hover:text-yellow-300">Offers</a></li>
+          <li><a href="#" class="hover:text-yellow-300">Help & Support</a></li>
+          <li><a href="#" class="hover:text-yellow-300">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-yellow-300 text-lg font-semibold mb-3">Contact Us</h3>
+        <p class="text-sm">123 Green Road, Mymensingh</p>
+        <p class="text-sm">+880 1301 701 330</p>
+        <p class="text-sm">support@easyticket.com</p>
+
+        <div class="flex items-center gap-3 mt-3">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-6 hover:scale-110 transition"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-6 hover:scale-110 transition"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="w-6 hover:scale-110 transition"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/30 text-center py-3 text-xs">
+      © ২০২৫ EasyTicket. সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </footer>
+
+  <!-- Animation -->
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease;
+    }
+  </style>
+
 </body>
-
 </html>
